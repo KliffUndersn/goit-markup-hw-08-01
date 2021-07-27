@@ -12,12 +12,24 @@
 }
 
 .portfolio-container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  // 768+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  // 1200+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .gallery__list {

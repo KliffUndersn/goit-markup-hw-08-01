@@ -14,36 +14,39 @@
         rel="stylesheet">
 </head>
 
-<header class=head-border>
-    <div class="container">
-        <nav class="nav">
 
-            <a class="logo" href="./index.html"><span class="logo__primary-color">Web</span>Studio</a>
 
-            <ul class="nav__list list">
-                <li class="nav__item"><a class="nav__link link " href="./index.html">Студия</a></li>
-                <li class="nav__item"><a class="nav__link link active" href="./portfolio.html">Портфолио</a></li>
-                <li class="nav__item"><a class="nav__link link" href="#">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <ul class="contact__list list">
-            <li class="contact__item"><a class="contact__link link" href="mailto:info@devstudio.com">
-                    <svg class=contact__icon width="16" height="12">
-                        <use href="./images/sprite.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a></li>
-            <li class="contact__item"><a class="contact__link link" href="tel:+380961111111">
-                    <svg class=contact__icon width="10" height="16">
-                        <use href="./images/sprite.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-            </li>
-        </ul>
-    </div>
-</header>
 <body>
-   
+
+    <header class=head-border>
+        <div class="container container__header">
+            <nav class="nav">
+    
+                <a class="logo" href="./index.html"><span class="logo__primary-color">Web</span>Studio</a>
+    
+                <ul class="nav__list list">
+                    <li class="nav__item"><a class="nav__link link " href="./index.html">Студия</a></li>
+                    <li class="nav__item"><a class="nav__link link active" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav__item"><a class="nav__link link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <ul class="contact__list list">
+                <li class="contact__item"><a class="contact__link link" href="mailto:info@devstudio.com">
+                        <svg class=contact__icon width="16" height="12">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a></li>
+                <li class="contact__item"><a class="contact__link link" href="tel:+380961111111">
+                        <svg class=contact__icon width="10" height="16">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
     <main>
         <section class="portfolio-container">
 
@@ -60,7 +63,33 @@
                 <li class="gallery__item list ">
                         <a class="gallery__link link " href=" ">
                       <div class="gallery__overlay">
-                                <img src="./images/tehnokrya.jpg" alt="website" width="370">
+
+                        <picture>
+                            <source
+                                srcset="./images/gallery/desktop/techno.webp 1x, ./images/gallery/desktop/techno@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source
+                                srcset="./images/gallery/desktop/techno.jpg 1x, ./images/gallery/desktop/techno@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            
+                            <source
+                                srcset="./images/gallery/tablet/techno.webp 1x, ./images/gallery/tablet/techno@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source
+                                srcset="./images/gallery/tablet/techno.jpg 1x, ./images/gallery/tablet/techno@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source
+                                srcset="./images/gallery/mobile/techno.webp 1x, ./images/gallery/mobile/techno@2x.webp 2x"
+                                media="(max-width: 767px)" type="image/webp">
+                            <source
+                                srcset="./images/gallery/mobile/techno.jpg 1x, ./images/gallery/mobile/techno@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            
+                            <img class="about-list-img" src="" alt="photo-frontend-dev">
+                            </picture>
+                                <!-- <img src="./images/tehnokrya.jpg" alt="website" width="370"> -->
+
+
                                 <p class="gallery__about">Технокряк это 
                                     современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -72,7 +101,32 @@
                 <li class="gallery__item list">
                     <a class="gallery__link link" href="">
                         <div class="gallery__overlay">
-                              <img src="./images/poster-ball.jpg" alt="basketball-players" width="370">
+
+                            <picture>
+                                <source
+                                    srcset="./images/gallery/desktop/poster-orlean-star.webp 1x, ./images/gallery/desktop/poster-orlean-star@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/gallery/desktop/poster-orlean-star.jpg 1x, ./images/gallery/desktop/poster-orlean-star@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                
+                                <source
+                                    srcset="./images/gallery/tablet/poster-orlean-star.webp 1x, ./images/gallery/tablet/poster-orlean-star@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/gallery/tablet/poster-orlean-star.jpg 1x, ./images/gallery/tablet/poster-orlean-star@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                    <source
+                                    srcset="./images/gallery/mobile/poster-orlean-star.webp 1x, ./images/gallery/mobile/poster-orlean-star@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/gallery/mobile/poster-orlean-star.jpg 1x, ./images/gallery/mobile/poster-orlean-star@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                
+                                <img class="about-list-img" src="" alt="photo-frontend-dev">
+                                </picture>
+
+                              <!-- <img src="./images/poster-ball.jpg" alt="basketball-players" width="370"> -->
                                  <p class="gallery__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet laboriosam voluptatibus minus itaque quaerat quos sequi aut iusto, natus adipisci accusantium dignissimos eius! Alias facere sunt quisquam distinctio veniam.</p>
                             </div>
                             <div class="gallery__card">
@@ -85,7 +139,31 @@
                 <li class="gallery__item list ">
                     <a class="gallery__link link" href="">
                         <div class="gallery__overlay">
-                            <img src="./images/poster-shark.jpg" alt="restoraunt-logo" width="370">
+
+                            <picture>
+                                <source
+                                    srcset="./images/gallery/desktop/restaurant-seafood.webp 1x, ./images/gallery/desktop/restaurant-seafood@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/gallery/desktop/restaurant-seafood.jpg 1x, ./images/gallery/desktop/restaurant-seafood@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                
+                                <source
+                                    srcset="./images/gallery/tablet/restaurant-seafood.webp 1x, ./images/gallery/tablet/restaurant-seafood@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/gallery/tablet/restaurant-seafood.jpg 1x, ./images/gallery/tablet/restaurant-seafood@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                    <source
+                                    srcset="./images/gallery/mobile/restaurant-seafood.webp 1x, ./images/gallery/mobile/restaurant-seafood@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/gallery/mobile/restaurant-seafood.jpg 1x, ./images/gallery/mobile/restaurant-seafood@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                
+                                <img class="about-list-img" src="" alt="photo-frontend-dev">
+                                </picture>
+                            <!-- <img src="./images/poster-shark.jpg" alt="restoraunt-logo" width="370"> -->
                             <p class="gallery__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet laboriosam voluptatibus minus itaque quaerat quos sequi aut iusto, natus adipisci accusantium dignissimos eius! Alias facere sunt quisquam distinctio veniam.
                         </div>
                         <div class="gallery__card">
@@ -99,7 +177,32 @@
             <li class="gallery__item list ">
                 <a class="gallery__link link" href="">
                     <div class="gallery__overlay">
-                        <img src="./images/headphones.jpg" alt="headphones" width="370">
+
+                        <picture>
+                            <source
+                                srcset="./images/gallery/desktop/prime.webp 1x, ./images/gallery/desktop/prime@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source
+                                srcset="./images/gallery/desktop/prime.jpg 1x, ./images/gallery/desktop/prime@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            
+                            <source
+                                srcset="./images/gallery/tablet/prime.webp 1x, ./images/gallery/tablet/prime@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source
+                                srcset="./images/gallery/tablet/prime.jpg 1x, ./images/gallery/tablet/prime@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                                <source
+                                srcset="./images/gallery/mobile/prime.webp 1x, ./images/gallery/mobile/prime@2x.webp 2x"
+                                media="(max-width: 767px)" type="image/webp">
+                            <source
+                                srcset="./images/gallery/mobile/prime.jpg 1x, ./images/gallery/mobile/prime@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            
+                            <img class="about-list-img" src="" alt="photo-frontend-dev">
+                            </picture>
+
+                        <!-- <img src="./images/headphones.jpg" alt="headphones" width="370"> -->
                         <p class="gallery__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet laboriosam voluptatibus minus itaque quaerat quos sequi aut iusto, natus adipisci accusantium dignissimos eius! Alias facere sunt quisquam distinctio veniam.                 </div>
                     <div class="gallery__card">
                     <h3 class="gallery__title">Проект Prime</h3>
@@ -111,7 +214,31 @@
               <li class="gallery__item list ">
             <a class="gallery__link link" href="">
                 <div class="gallery__overlay">
-                    <img src="./images/boxes.jpg" alt="two-boxes" width="370">
+                    <picture>
+                        <source
+                            srcset="./images/gallery/desktop/boxes.webp 1x, ./images/gallery/desktop/boxes@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source
+                            srcset="./images/gallery/desktop/boxes.jpg 1x, ./images/gallery/desktop/boxes@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                        
+                        <source
+                            srcset="./images/gallery/tablet/boxes.webp 1x, ./images/gallery/tablet/boxes@2x.webp 2x"
+                            media="(min-width: 768px)" type="image/webp">
+                        <source
+                            srcset="./images/gallery/tablet/boxes.jpg 1x, ./images/gallery/tablet/boxes@2x.jpg 2x"
+                            media="(min-width: 768px)">
+                            <source
+                            srcset="./images/gallery/mobile/boxes.webp 1x, ./images/gallery/mobile/boxes@2x.webp 2x"
+                            media="(max-width: 767px)" type="image/webp">
+                        <source
+                            srcset="./images/gallery/mobile/boxes.jpg 1x, ./images/gallery/mobile/boxes@2x.jpg 2x"
+                            media="(max-width: 767px)">
+                        
+                        <img class="about-list-img" src="" alt="photo-frontend-dev">
+                        </picture>
+
+                    <!-- <img src="./images/boxes.jpg" alt="two-boxes" width="370"> -->
                     <p class="gallery__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet laboriosam voluptatibus minus itaque quaerat quos sequi aut iusto, natus adipisci accusantium dignissimos eius! Alias facere sunt quisquam distinctio veniam.         </div>
                 <div class="gallery__card">
                 <h3 class="gallery__title">Проект Boxes</h3>
@@ -122,7 +249,32 @@
               <li class="gallery__item list ">
               <a class="gallery__link link" href="">
             <div class="gallery__overlay">
-                <img src="./images/macbook.jpg" alt="macbook" width="370">
+
+                <picture>
+                    <source
+                        srcset="./images/gallery/desktop/inspiration.webp 1x, ./images/gallery/desktop/inspiration@2x.webp 2x"
+                        media="(min-width: 1200px)" type="image/webp">
+                    <source
+                        srcset="./images/gallery/desktop/inspiration.jpg 1x, ./images/gallery/desktop/inspiration@2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                    
+                    <source
+                        srcset="./images/gallery/tablet/inspiration.webp 1x, ./images/gallery/tablet/inspiration@2x.webp 2x"
+                        media="(min-width: 768px)" type="image/webp">
+                    <source
+                        srcset="./images/gallery/tablet/inspiration.jpg 1x, ./images/gallery/tablet/inspiration@2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        <source
+                        srcset="./images/gallery/mobile/inspiration.webp 1x, ./images/gallery/mobile/inspiration@2x.webp 2x"
+                        media="(max-width: 767px)" type="image/webp">
+                    <source
+                        srcset="./images/gallery/mobile/inspiration.jpg 1x, ./images/gallery/mobile/inspiration@2x.jpg 2x"
+                        media="(max-width: 767px)">
+                    
+                    <img class="about-list-img" src="" alt="photo-frontend-dev">
+                    </picture>
+
+                <!-- <img src="./images/macbook.jpg" alt="macbook" width="370"> -->
                 <p class="gallery__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet laboriosam voluptatibus minus itaque quaerat quos sequi aut iusto, natus adipisci accusantium dignissimos eius! Alias facere sunt quisquam distinctio veniam. </div>
             <div class="gallery__card">
             <h3 class="gallery__title">Inspiration has no Borders</h3>
@@ -133,7 +285,31 @@
 <li class="gallery__item list ">
     <a class="gallery__link link" href="">
         <div class="gallery__overlay">
-            <img src="./images/book.jpg" alt="book" width="370">
+
+            <picture>
+                <source
+                    srcset="./images/gallery/desktop/limited-edition.webp 1x, ./images/gallery/desktop/limited-edition@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp">
+                <source
+                    srcset="./images/gallery/desktop/limited-edition.jpg 1x, ./images/gallery/desktop/limited-edition@2x.jpg 2x"
+                    media="(min-width: 1200px)">
+                
+                <source
+                    srcset="./images/gallery/tablet/limited-edition.webp 1x, ./images/gallery/tablet/limited-edition@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                <source
+                    srcset="./images/gallery/tablet/limited-edition.jpg 1x, ./images/gallery/tablet/limited-edition@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source
+                    srcset="./images/gallery/mobile/limited-edition.webp 1x, ./images/gallery/mobile/limited-edition@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                <source
+                    srcset="./images/gallery/mobile/limited-edition.jpg 1x, ./images/gallery/mobile/limited-edition@2x.jpg 2x"
+                    media="(max-width: 767px)">
+                
+                <img class="about-list-img" src="" alt="photo-frontend-dev">
+                </picture>
+            <!-- <img src="./images/book.jpg" alt="book" width="370"> -->
             <p class="gallery__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet laboriosam voluptatibus minus itaque quaerat quos sequi aut iusto, natus adipisci accusantium dignissimos eius! Alias facere sunt quisquam distinctio veniam.  </div>    
                 <div class="gallery__card">
         <h3 class="gallery__title">Издание Limited Edition</h3>
@@ -145,7 +321,31 @@
 <li class="gallery__item list ">
     <a class="gallery__link link" href="">
         <div class="gallery__overlay">
-            <img src="./images/label.jpg" alt="label" width="370">
+
+            <picture>
+                <source
+                    srcset="./images/gallery/desktop/lab.webp 1x, ./images/gallery/desktop/lab@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp">
+                <source
+                    srcset="./images/gallery/desktop/lab.jpg 1x, ./images/gallery/desktop/lab@2x.jpg 2x"
+                    media="(min-width: 1200px)">
+                
+                <source
+                    srcset="./images/gallery/tablet/lab.webp 1x, ./images/gallery/tablet/lab@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                <source
+                    srcset="./images/gallery/tablet/lab.jpg 1x, ./images/gallery/tablet/lab@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source
+                    srcset="./images/gallery/mobile/lab.webp 1x, ./images/gallery/mobile/lab@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                <source
+                    srcset="./images/gallery/mobile/lab.jpg 1x, ./images/gallery/mobile/lab@2x.jpg 2x"
+                    media="(max-width: 767px)">
+                
+                <img class="about-list-img" src="" alt="photo-frontend-dev">
+                </picture>
+            <!-- <img src="./images/label.jpg" alt="label" width="370"> -->
             <p class="gallery__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet laboriosam voluptatibus minus itaque quaerat quos sequi aut iusto, natus adipisci accusantium dignissimos eius! Alias facere sunt quisquam distinctio veniam.   </div>       
                 <div class="gallery__card">
         <h3 class="gallery__title">Проект LAB</h3>
@@ -155,7 +355,31 @@
 <li class="gallery__item list ">
     <a class="gallery__link link" href="">
         <div class="gallery__overlay">
-            <img src="./images/laptop.jpg" alt="notebook" width="370">
+
+            <picture>
+                <source
+                    srcset="./images/gallery/desktop/growing-business.webp 1x, ./images/gallery/desktop/growing-business@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp">
+                <source
+                    srcset="./images/gallery/desktop/growing-business.jpg 1x, ./images/gallery/desktop/growing-business@2x.jpg 2x"
+                    media="(min-width: 1200px)">
+                
+                <source
+                    srcset="./images/gallery/tablet/growing-business.webp 1x, ./images/gallery/tablet/growing-business@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                <source
+                    srcset="./images/gallery/tablet/growing-business.jpg 1x, ./images/gallery/tablet/growing-business@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source
+                    srcset="./images/gallery/mobile/growing-business.webp 1x, ./images/gallery/mobile/growing-business@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                <source
+                    srcset="./images/gallery/mobile/growing-business.jpg 1x, ./images/gallery/mobile/growing-business@2x.jpg 2x"
+                    media="(max-width: 767px)">
+                
+                <img class="about-list-img" src="" alt="photo-frontend-dev">
+                </picture>
+            <!-- <img src="./images/laptop.jpg" alt="notebook" width="370"> -->
             <p class="gallery__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet laboriosam voluptatibus minus itaque quaerat quos sequi aut iusto, natus adipisci accusantium dignissimos eius! Alias facere sunt quisquam distinctio veniam.   </div>      
                  <div class="gallery__card">
         <h3 class="gallery__title">Growing Business</h3>
@@ -165,10 +389,10 @@
             </ul>
         </section>
     </main>
-       <footer class="footer__section">
+    <footer class="footer__section">
         <div class="footer__container">
             <div class=footer__flex>
-                <div>
+                <div class="footer__contact-info">
                 <a class="logo__footer" href="./index.html"><span class="logo__primary-color">Web</span>Studio</a>
 
                 <address>
@@ -220,7 +444,7 @@
                     
                         <p class="footer-form__title">Подпишитесь на рассылку</p>
                         
-                        <form class="footer__flex">
+                        <form class="footer-form__flex">
                         <input type="mail" name="user-mail" class="footer-form__input" required pattern="*@*.*" title="" placeholder="E-mail">
                         <button type="button" class="footer-form__btn">Подписаться <svg class="footer-form-telegram" width="" height="">
                             <use href="./images/sprite.svg#icon-telegram"></use></svg></button>
@@ -228,7 +452,8 @@
             </form>
             </div>
 
-        </footer>       
+
+    </footer>      
  
 </body>
 

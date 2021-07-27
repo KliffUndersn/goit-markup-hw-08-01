@@ -75,7 +75,8 @@
     margin: auto;
   }
 
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
+    margin: 0;
     margin-left: 93px;
   }
 }
@@ -141,9 +142,10 @@
   }
 
   @media screen and (min-width: 768px) {
+    // margin: 0;
   }
 
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
     margin: 0;
     margin-left: 12px;
   }
@@ -171,6 +173,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    margin-top: 0px;
     margin-left: 70px;
   }
 }
@@ -185,5 +188,12 @@
 
   @media screen and (min-width: 1200px) {
     padding: 0;
+  }
+}
+.footer-form__flex {
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
