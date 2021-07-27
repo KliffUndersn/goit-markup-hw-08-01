@@ -3,8 +3,8 @@
 }
 
 .footer__flex {
+  text-align: center;
   @media screen and (min-width: 480px) {
-    text-align: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -89,9 +89,10 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 250px;
   @media screen and (min-width: 480px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
     width: 450px;
   }
 
@@ -135,10 +136,10 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 60px;
   @media screen and (min-width: 480px) {
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 768px) {

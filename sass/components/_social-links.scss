@@ -57,9 +57,9 @@
 .our-social__list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  padding-bottom: 60px;
   @media screen and (min-width: 480px) {
-    justify-content: center;
-    padding-bottom: 60px;
   }
 
   @media screen and (min-width: 768px) {

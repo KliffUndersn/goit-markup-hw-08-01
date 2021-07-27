@@ -73,6 +73,14 @@ img {
   list-style: none;
 }
 
+@media screen and (max-width: 479px) {
+  .employer-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -393,12 +401,15 @@ img {
   }
 }
 
-.feature__container {
-  margin-bottom: 30px;
+@media screen and (max-width: 480px) {
+  .feature__container:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .feature__container {
+    margin-bottom: 30px;
     width: 354px;
     margin-right: 30px;
   }
@@ -635,10 +646,8 @@ img {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 480px) {
-  .footer__flex {
-    text-align: center;
-  }
+.footer__flex {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -731,12 +740,13 @@ img {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 250px;
 }
 
 @media screen and (min-width: 480px) {
   .footer-form__input {
-    padding-top: 20px;
-    padding-bottom: 20px;
     width: 450px;
   }
 }
@@ -768,6 +778,9 @@ img {
   color: var(--color-white);
   background-color: var(--color-blue);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .footer-form__btn:hover, .footer-form__btn:focus {
@@ -775,14 +788,6 @@ img {
   color: var(--color-blue);
   background-color: var(--color-innative-btn);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-@media screen and (min-width: 480px) {
-  .footer-form__btn {
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 60px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1061,13 +1066,8 @@ img {
 .our-social__list {
   display: flex;
   flex-direction: row;
-}
-
-@media screen and (min-width: 480px) {
-  .our-social__list {
-    justify-content: center;
-    padding-bottom: 60px;
-  }
+  justify-content: center;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1170px) {
@@ -1129,6 +1129,14 @@ img {
   .clients__title {
     font-size: 36px;
     margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .clients__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
   }
 }
 
