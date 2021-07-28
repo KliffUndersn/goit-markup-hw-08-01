@@ -34,7 +34,7 @@
   @media screen and (min-width: 768px) {
   }
 
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
   }
@@ -58,7 +58,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/bg-image/bg-mobile/banner.jpg");
+      url("../images/bg-image/bg-mobile/banner.jpg");
   }
 
   @media screen and (min-width: 768px) {
@@ -69,7 +69,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/bg-image/bg-tablet/banner.jpg");
+      url("../images/bg-image/bg-tablet/banner.jpg");
   }
 
   @media screen and (min-width: 1200px) {
@@ -80,6 +80,6 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/bg-image/bg-desktop/banner.jpg");
+      url("../images/bg-image/bg-desktop/banner.jpg");
   }
 }
