@@ -306,21 +306,38 @@ img {
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-section {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../images/bg-image/bg-mobile/banner@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-section {
     padding-top: 118px;
     padding-bottom: 118px;
-    width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image/bg-tablet/banner.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../images/bg-image/bg-tablet/banner@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    width: 1600px;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image/bg-desktop/banner.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero-section {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url("../images/bg-image/bg-desktop/banner@2x.jpg");
   }
 }
 
@@ -599,12 +616,12 @@ img {
 .team-section__card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 480px) {
   .team-section__card {
     width: 450px;
-    margin-top: 30px;
   }
 }
 
@@ -1131,6 +1148,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     display: flex;
+    margin-bottom: 30px;
   }
 }
 
@@ -1433,9 +1451,9 @@ img {
     z-index: 100;
     top: 50%;
     left: 50%;
-    width: 96vw;
+    width: 100vw;
     max-width: 480px;
-    height: 96vh;
+    height: 100vw;
     max-height: 795px;
     overflow: auto;
     background-color: var(--color-white);
