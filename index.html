@@ -43,7 +43,76 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-btn__icon">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+
+          <div class="mobile-menu" id="menu-mobile" data-menu>
+            <nav class="nav">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+              <ul class="site-nav list">
+                <li class="site-nav__item">
+                  <a
+                    class="site-nav__link site-nav__link--active link"
+                    href="#home-page"
+                    >Студия</a
+                  >
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+  
+            <ul class="communications list">
+              <li class="communications__item">
+                <a
+                  class="communications__link link"
+                  href="mailto:info@devstudio.com"
+                >
+             
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="communications__item">
+                <a class="communications__link link" href="tel:+38-096-111-11-11">
+                
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+
+                    <ul class="mobile-social-list list">
+                        <li class="mobile-social-list__item">
+                            <a href="" class="mobile-social-list__link link">Instagram</a>
+                        </li>
+                        <li class="mobile-social-list__item">
+                            <a href="" class="mobile-social-list__link link">Twitter</a>
+                        </li>
+                        <li class="mobile-social-list__item">
+                            <a href="" class="mobile-social-list__link link">Facebook</a>
+                        </li>
+                        <li class="mobile-social-list__item">
+                            <a href="" class="mobile-social-list__link link">LinkedIn</a>
+                        </li>
+                    </ul>
+             
+          </div>
+
         </div>
+       
     </header>
 
     <main>
@@ -584,7 +653,13 @@
         </div>
     </div>
     
+
+
+    
+ 
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 
