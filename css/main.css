@@ -300,7 +300,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .hero-section {
-    max-width: 480px;
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image/bg-mobile/banner.jpg");
@@ -1227,12 +1226,13 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 580px;
+  width: 95vw;
+  height: 95vh;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+  overflow: auto;
 }
 
 @media screen and (max-width: 479px) {
@@ -1514,6 +1514,7 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
+    color: var(--color-blue);
     letter-spacing: 0.02em;
   }
 }
