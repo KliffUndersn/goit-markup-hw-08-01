@@ -11,12 +11,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
   }
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
     text-align: start;
-    align-items: baseline;
   }
 }
 
@@ -170,7 +170,7 @@
   @media screen and (min-width: 768px) {
     // margin-left: 165px;
     // text-align: baseline;
-    margin-top: 5px;
+    // margin-top: 5px;
   }
 
   @media screen and (min-width: 1200px) {
